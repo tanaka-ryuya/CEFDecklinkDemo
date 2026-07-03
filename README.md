@@ -14,6 +14,10 @@ The executable `DeckLinkDX11.exe` in the extracted folder is the main applicatio
 
 *※ Managed using GitHub LFS (Large File Storage).*
 
+> [!TIP]
+> **Try it instantly without hardware!**  
+> If you don't have an UltraStudio or DeckLink device, the Software will automatically launch in **"Simulator Mode"** (rendering in a preview window on your PC). You can test the smoothness of HTML/WebGL animations and check the configuration immediately on any Windows PC.
+
 ---
 
 ## ✨ Key Features

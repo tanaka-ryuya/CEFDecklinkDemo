@@ -14,6 +14,10 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
 
 *※ 使用 GitHub LFS (Large File Storage) 进行管理。*
 
+> [!TIP]
+> **无需硬件，即可立即体验！**  
+> 即使手头没有 UltraStudio 或 DeckLink 设备，只要在 Windows 电脑上运行，软件就会自动以“模拟器模式”（在 PC 上的预览窗口中进行渲染）启动。无需连接任何硬件或复杂设置，即可立即在任意 Windows PC 上测试 HTML/WebGL 动画的流畅度以及修改配置。
+
 ---
 
 ## ✨ 主要功能
