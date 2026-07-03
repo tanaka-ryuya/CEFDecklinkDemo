@@ -43,7 +43,7 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
 **`config.json` 示例:**
 ```json
 {
-  "url": "https://cefdecklink-demo-page.vercel.app/sample.html",
+  "url": "https://cef-decklink-sale.vercel.app/sample.html",
   "unmult_thresh": 0.0,
   "format": "5994i",
   "il_filter_mode": 1

@@ -43,7 +43,7 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 **`config.json` の記述例:**
 ```json
 {
-  "url": "https://cefdecklink-demo-page.vercel.app/sample.html",
+  "url": "https://cef-decklink-sale.vercel.app/sample.html",
   "unmult_thresh": 0.0,
   "format": "5994i",
   "il_filter_mode": 1

@@ -43,7 +43,7 @@ Create a `config.json` file next to `DeckLinkDX11.exe` to specify the target web
 **`config.json` Example:**
 ```json
 {
-  "url": "https://cefdecklink-demo-page.vercel.app/sample.html",
+  "url": "https://cef-decklink-sale.vercel.app/sample.html",
   "unmult_thresh": 0.0,
   "format": "5994i",
   "il_filter_mode": 1
