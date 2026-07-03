@@ -98,3 +98,9 @@ To remove the watermark, place a `licensekey.json` next to the executable.
   The DeckLink driver is not installed or the device is not connected. The app automatically starts in Simulator Mode.
 - **App crashes on launch**  
   Verify that all CEF files (e.g., `libcef.dll`) from the ZIP are present in the directory.
+
+---
+
+## ⚖️ License
+This software is proprietary. Redistribution, reverse engineering, and modification are strictly prohibited. Please read the full [LICENSE](LICENSE.md) before use.
+For other languages: [日本語利用規約](LICENSE.ja.md) | [简体中文使用条款](LICENSE.zh.md).

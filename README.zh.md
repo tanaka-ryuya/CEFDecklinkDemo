@@ -98,3 +98,9 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
   未安装 DeckLink 驱动或设备未连接。程序将自动在模拟器模式下启动。
 - **启动时崩溃**  
   请检查 ZIP 中的所有 CEF 依赖文件（如 `libcef.dll`）是否都完整地保留在当前目录下。
+
+---
+
+## ⚖️ 许可条款
+本软件为专有软件。严禁二次分发、重新发布、反向工程和修改。使用前请务必阅读完整的 [使用条款 (LICENSE.zh.md)](LICENSE.zh.md)。
+其他语言版本: [English LICENSE](LICENSE.md) | [日本語 LICENSE](LICENSE.ja.md)
