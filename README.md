@@ -1,40 +1,42 @@
-# CEFDecklink - 放送品質グラフィック送出ソフトウェア (Demo Release)
+# CEFDecklink - Broadcast-Grade Graphic Playout Software (Demo Release)
 
-CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; CEF）で描画した Web ページを、1080i59.94 または 1080i50 の出力レートで、SDI から「ストレートアルファの Fill と Key」に分離出力できる、軽量・単機能かつ安定性に優れた放送品質のソフトウェア**です。
+Language: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
-ノートPCと **Blackmagic UltraStudio HD Mini** などの DeckLink デバイスを接続するだけで、映像スイッチャーでの完璧なグラフィック（テロップや CG）の半透明合成を実現します。
+CEFDecklink is a **lightweight, single-purpose, and highly stable broadcast-grade software that renders web pages using an embedded Chromium Embedded Framework (CEF) and outputs them as "Fill and Key (Straight Alpha)" signals via SDI at 1080i59.94 or 1080i50.**
 
----
-
-## 📥 ダウンロード
-本リポジトリに配置されている **`CEFDecklink.zip`** をダウンロードして解凍してください。
-解凍したフォルダ内にある `DeckLinkDX11.exe` が本体の実行ファイルです（インストーラーやインストール作業は不要です）。
-
-*※ GitHub LFS (Large File Storage) を使用して配置しています。*
+Simply connect a laptop to a Blackmagic **UltraStudio HD Mini** or similar DeckLink device to achieve perfect semi-transparent graphic synthesis on video switchers.
 
 ---
 
-## ✨ 主な特徴
+## 📥 Download
+Download and extract **`CEFDecklink.zip`** from this repository.
+The executable `DeckLinkDX11.exe` in the extracted folder is the main application (no installation required).
 
-1. **Unmultiplied Keying (フリンジ対策のビルトイン)**  
-   Web ベース hometown や半透明なグラデーション、ドロップシャドウをスイッチャー上で合成した際に、エッジが黒ずむ問題（フリンジ）を解消するための「Unmultiplied フィルター」を標準装備。完璧なストレートアルファ合成を可能にします。
-2. **60fps Free-Run CEF (滑らかなアニメーション)**  
-   内部ブラウザ（CEF）を 60fps で自律駆動させ、非同期・ロックフリーなキューを用いて 29.97fps(59.94i) のハードウェア出力と完全同期。HTML アニメーションのカクつき（スタッター）や停止時の振動（ジッター）を防ぎます。
-3. **シミュレーターモード**  
-   DeckLink デバイスが接続されていない PC で起動した場合、自動的に「シミュレーターモード（ウィンドウプレビュー）」にフォールバックします。現場に機材がない状態でも、Web グラフィックの描画確認が可能です。
+*※ Managed using GitHub LFS (Large File Storage).*
 
 ---
 
-## 🚀 クイックスタート
+## ✨ Key Features
 
-### 1. ハードウェアの接続
-1. 送出用の Windows PC（ノートPCなど）と **UltraStudio HD Mini** を Thunderbolt ケーブルで接続します。
-2. UltraStudio の **SDI OUT 1** をスイッチャーの **Fill 入力**へ、**SDI OUT 2** を **Key 入力**へ SDI ケーブルで接続します。
+1. **Unmultiplied Keying (Built-in Fringe Prevention)**  
+   Equipped with a built-in "Unmultiplied Filter" to eliminate edge darkening (fringe issues) when blending semi-transparent web gradients or drop shadows on switchers. Enables perfect straight alpha synthesis.
+2. **60fps Free-Run CEF (Smooth Animations)**  
+   Renders the internal browser (CEF) at 60fps autonomously and uses asynchronous, lock-free queues to achieve perfect synchronization with the 29.97fps (59.94i) hardware output. This prevents animation stutter and interlaced judder.
+3. **Simulator Mode**  
+   If launched on a PC without a DeckLink device, the app automatically falls back to "Simulator Mode (Window Preview)." You can verify web graphic rendering even without hardware.
 
-### 2. ソフトウェアの起動と設定
-解凍したフォルダの中に設定ファイル `config.json` を作成し、描画したい Web ページの URL と出力フォーマットを指定します。
+---
 
-**`config.json` の記述例:**
+## 🚀 Quick Start
+
+### 1. Hardware Connection
+1. Connect a Windows PC to **UltraStudio HD Mini** via Thunderbolt.
+2. Connect UltraStudio **SDI OUT 1** to the switcher's **Fill input** and **SDI OUT 2** to the **Key input** using SDI cables.
+
+### 2. Launch & Settings
+Create a `config.json` file next to `DeckLinkDX11.exe` to specify the target web URL and output format.
+
+**`config.json` Example:**
 ```json
 {
   "url": "https://cefdecklink-demo-page.vercel.app/sample.html",
@@ -44,55 +46,55 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 }
 ```
 
-- `url`: 描画・送出したい Web ページの URL（ローカルファイル `file://...` の指定も可能）。
-- `unmult_thresh`: Unmultiplied 処理 of 閾値（デフォルト `0.0` = 完全ストレート）。フリンジが気になる場合は `0.01` 〜 `0.05` 程度で微調整します。
-- `format`: SDI の出力フォーマット。`"5994i"` (1080i59.94) または `"50i"` (1080i50) のみ対応。
-- `il_filter_mode`: 垂直ローパスフィルタ（デフォルト `1` = 3-tap）。細い横線のフリッカーに応じて `0`（なし）や `2`（5-tap）に変更可能。
+- `url`: Web page URL to render (local paths like `file://...` are supported).
+- `unmult_thresh`: Threshold for unmultiplied processing (default `0.0` for pure straight alpha). Adjust between `0.01` and `0.05` if fringing occurs.
+- `format`: SDI output format. Only `"5994i"` (1080i59.94) or `"50i"` (1080i50) are supported.
+- `il_filter_mode`: Interlace vertical low-pass filter (default `1` = 3-tap). Can be changed to `0` (None) or `2` (5-tap) depending on flicker.
 
-設定後、`DeckLinkDX11.exe` を実行するだけで送出が開始されます。
-
----
-
-## 🔒 セキュリティおよび起動時の警告について
-
-- **SmartScreen の警告:**  
-  本ソフトウェアは個人開発のため、デジタル署名を取得していません。Windows SmartScreen による青い警告画面が表示された場合は、**「詳細情報」** をクリックし、**「実行」** を選択して起動してください。
-- **ファイアウォールの警告:**  
-  内部ブラウザ（CEF）が開発者ツール（DevTools）接続用のポートを開くため、起動時に警告が表示されることがあります。開発者ツールを使わない場合は、通信を **「キャンセル（許可しない）」** としても送出機能は正常に動作します。
+Run `DeckLinkDX11.exe` to start playout.
 
 ---
 
-## ⌨️ 操作と機能 (コンソール TUI ショートカット)
-起動後、コマンドプロンプト等のコンソールウィンドウにフォーカスがある状態で、以下のキー操作が可能です：
+## 🔒 Security & Startup Warnings
 
-- **`Ctrl + I`**: **インターレースモード (標準)** (前後フレームを合成し 1080i 出力)
-- **`Ctrl + D`**: **Diff モード** (前後フレームの差分を可視化。スタッターのデバッグ用)
-- **`Ctrl + P`**: **プログレッシブモード** (プレビューウィンドウでの確認用)
-- **`Ctrl + A` / `Ctrl + Z`**: Unmult 閾値の微調整 (A で増加、Z で減少)
-- **`Ctrl + C`**: アプリケーションの安全な終了
-- **`F11`**: プレビューウィンドウの全画面表示切り替え
+- **SmartScreen Warning:**  
+  This software is not digitally signed. If Windows Defender SmartScreen blocks it, click **"More Info"** and then select **"Run anyway"**.
+- **Firewall Alert:**  
+  The app opens a port for browser DevTools connection. Even if you click **"Cancel (Block)"**, the playout function will work normally.
 
 ---
 
-## 🔑 プロ版ライセンスについて
-デフォルトでは出力映像の右下に透かし（ウォーターマーク）が表示されます。
-透かしを解除するには、実行ファイルの隣に `licensekey.json` を配置し、有効なライセンスキーを設定してください。
+## ⌨️ Controls (Console TUI Shortcuts)
+While the console window has focus, you can use the following keys:
 
-**`licensekey.json` の記述例:**
+- **`Ctrl + I`**: **Interlace Mode (Default)** (Merges frames for 1080i output)
+- **`Ctrl + D`**: **Diff Mode** (Visualizes difference between frames for debugging stutter)
+- **`Ctrl + P`**: **Progressive Mode** (For preview window rendering)
+- **`Ctrl + A` / `Ctrl + Z`**: Fine-tune Unmult threshold (A to increase, Z to decrease)
+- **`Ctrl + C`**: Safe exit
+- **`F11`**: Toggle preview window fullscreen
+
+---
+
+## 🔑 Pro License
+By default, a red watermark is displayed in the bottom-right corner.
+To remove the watermark, place a `licensekey.json` next to the executable.
+
+**`licensekey.json` Example:**
 ```json
 {
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
-*※ プロ版ライセンスの購入・管理システムは現在準備中です。*
+*※ Pro license management system is currently under development.*
 
 ---
 
-## 🛠️ トラブルシューティング
+## 🛠️ Troubleshooting
 
-- **「Shader Compile Failed」と表示される**  
-  実行ファイルの隣に `shaders` フォルダがコピーされているか確認してください。
-- **「Decklink not found」と表示される**  
-  DeckLink ドライバがインストールされていないか、デバイスが認識されていません。自動的にシミュレーターモードで起動します。
-- **起動時にクラッシュする**  
-  `libcef.dll` などの必要な CEF 関連ライブラリが実行ファイルと同じディレクトリに配置されているか確認してください。ZIP 内のフォルダ構造を崩さずに実行する必要があります。
+- **"Shader Compile Failed"**  
+  Ensure the `shaders` folder is copied next to the executable.
+- **"Decklink not found"**  
+  The DeckLink driver is not installed or the device is not connected. The app automatically starts in Simulator Mode.
+- **App crashes on launch**  
+  Verify that all CEF files (e.g., `libcef.dll`) from the ZIP are present in the directory.
