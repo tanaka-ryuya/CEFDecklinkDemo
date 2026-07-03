@@ -9,10 +9,10 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
 ---
 
 ## 📥 下载
-请从本仓库下载并解压 **`CEFDecklink.zip`**。
+请从 [GitHub Releases](https://github.com/tanaka-ryuya/CEFDecklinkDemo/releases/download/v0.1.0-demo/CEFDecklink.zip) 下载并解压 **`CEFDecklink.zip`**。
 解压后文件夹中的 `DeckLinkDX11.exe` 即为主程序（无需安装）。
 
-*※ 使用 GitHub LFS (Large File Storage) 进行管理。*
+*※ 作为 GitHub Release 资源进行托管。*
 
 > [!TIP]
 > **无需硬件，即可立即体验！**  
@@ -50,7 +50,7 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
 }
 ```
 
-- `url`: 要渲染输出的网页 URL（支持本地路径 `file://...`）。
+- `url`: 要渲染输出的网页 URL（支持本地路径 `file://...`。可以直接使用 [Vercel 示例页面](https://cef-decklink-sale.vercel.app/sample.html) 进行测试）。
 - `unmult_thresh`: Unmultiplied 处理的阈值（默认 `0.0` 表示纯直切阿尔法）。如果出现黑边，可在 `0.01` 到 `0.05` 之间微调。
 - `format`: SDI 输出格式。仅支持 `"5994i"` (1080i59.94) 或 `"50i"` (1080i50)。
 - `il_filter_mode`: 隔行扫描垂直低通滤波器（默认 `1` = 3-tap）。可根据线闪烁情况修改为 `0`（无）或 `2`（5-tap）。

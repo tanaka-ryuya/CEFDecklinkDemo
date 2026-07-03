@@ -9,10 +9,10 @@ Simply connect a laptop to a Blackmagic **UltraStudio HD Mini** or similar DeckL
 ---
 
 ## 📥 Download
-Download and extract **`CEFDecklink.zip`** from this repository.
+Download and extract [CEFDecklink.zip](https://github.com/tanaka-ryuya/CEFDecklinkDemo/releases/download/v0.1.0-demo/CEFDecklink.zip) from GitHub Releases.
 The executable `DeckLinkDX11.exe` in the extracted folder is the main application (no installation required).
 
-*※ Managed using GitHub LFS (Large File Storage).*
+*※ Hosted as a GitHub Release asset.*
 
 > [!TIP]
 > **Try it instantly without hardware!**  
@@ -50,7 +50,7 @@ Create a `config.json` file next to `DeckLinkDX11.exe` to specify the target web
 }
 ```
 
-- `url`: Web page URL to render (local paths like `file://...` are supported).
+- `url`: Web page URL to render (local paths like `file://...` are supported. You can use the [Vercel sample page](https://cef-decklink-sale.vercel.app/sample.html) directly for testing).
 - `unmult_thresh`: Threshold for unmultiplied processing (default `0.0` for pure straight alpha). Adjust between `0.01` and `0.05` if fringing occurs.
 - `format`: SDI output format. Only `"5994i"` (1080i59.94) or `"50i"` (1080i50) are supported.
 - `il_filter_mode`: Interlace vertical low-pass filter (default `1` = 3-tap). Can be changed to `0` (None) or `2` (5-tap) depending on flicker.

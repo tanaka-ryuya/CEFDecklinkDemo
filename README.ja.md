@@ -9,10 +9,10 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 ---
 
 ## 📥 ダウンロード
-本リポジトリに配置されている **`CEFDecklink.zip`** をダウンロードして解凍してください。
+[GitHub Releases](https://github.com/tanaka-ryuya/CEFDecklinkDemo/releases/download/v0.1.0-demo/CEFDecklink.zip) から最新の **`CEFDecklink.zip`** をダウンロードして解凍してください。
 解凍したフォルダ内にある `DeckLinkDX11.exe` が本体の実行ファイルです（インストーラーやインストール作業は不要です）。
 
-*※ GitHub LFS (Large File Storage) を使用して配置しています。*
+*※ GitHub Releases のアセットとして配置しています。*
 
 > [!TIP]
 > **機材なしで今すぐ簡単にお試しいただけます！**  
@@ -50,7 +50,7 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 }
 ```
 
-- `url`: 描画・送出したい Web ページの URL（ローカルファイル `file://...` の指定も可能）。
+- `url`: 描画・送出したい Web ページの URL（ローカルファイル `file://...` の指定も可能。動作確認には [Vercel のサンプルページ](https://cef-decklink-sale.vercel.app/sample.html) をそのまま使用できます）。
 - `unmult_thresh`: Unmultiplied 処理の閾値（デフォルト `0.0` = 完全ストレート）。フリンジが気になる場合は `0.01` 〜 `0.05` 程度で微調整します。
 - `format`: SDI の出力フォーマット。`"5994i"` (1080i59.94) または `"50i"` (1080i50) のみ対応。
 - `il_filter_mode`: 垂直ローパスフィルタ（デフォルト `1` = 3-tap）。細い横線のフリッカーに応じて `0`（なし）や `2`（5-tap）に変更可能。
