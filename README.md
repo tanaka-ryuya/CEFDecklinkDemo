@@ -2,6 +2,9 @@
 
 Language: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
+> [!IMPORTANT]
+> This is a Demo release. To purchase the full Pro version and remove the watermark, please visit our [Sales Site](https://cef-decklink-sale.vercel.app/).
+
 CEFDecklink is a **lightweight, single-purpose, and highly stable broadcast-grade software that renders web pages using an embedded Chromium Embedded Framework (CEF) and outputs them as "Fill and Key (Straight Alpha)" signals via SDI at 1080i59.94 or 1080i50.**
 
 Simply connect a laptop to a Blackmagic **UltraStudio HD Mini** or similar DeckLink device to achieve perfect semi-transparent graphic synthesis on video switchers.
@@ -90,7 +93,7 @@ To remove the watermark, place a `licensekey.json` next to the executable.
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
-*※ Pro license management system is currently under development.*
+*※ You can purchase a Pro license from our [Sales Site](https://cef-decklink-sale.vercel.app/).*
 
 ---
 

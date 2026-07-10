@@ -2,6 +2,9 @@
 
 Language: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
+> [!IMPORTANT]
+> 本ソフトウェアはデモ版です。ウォーターマーク（透かし）のないプロ版の購入は、[セールスサイト](https://cef-decklink-sale.vercel.app/) をご覧ください。
+
 CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; CEF）で描画した Web ページを、1080i59.94 または 1080i50 の出力レートで、SDI から「ストレートアルファの Fill と Key」に分離出力できる、軽量・単機能かつ安定性に優れた放送品質のソフトウェア**です。
 
 ノートPCと **Blackmagic UltraStudio HD Mini** などの DeckLink デバイスを接続するだけで、映像スイッチャーでの完璧なグラフィック（テロップや CG）の半透明合成を実現します。
@@ -90,7 +93,7 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
-*※ プロ版ライセンスの購入・管理システムは現在準備中です。*
+*※ プロ版ライセンスは [セールスサイト](https://cef-decklink-sale.vercel.app/) からご購入いただけます。*
 
 ---
 

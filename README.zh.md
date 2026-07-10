@@ -2,6 +2,9 @@
 
 语言: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
 
+> [!IMPORTANT]
+> 这是演示版 (Demo)。要购买专业版以去除水印，请访问我们的 [销售网站](https://cef-decklink-sale.vercel.app/)。
+
 CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。它使用嵌入式 Chromium (CEF) 渲染网页，并通过 SDI 接口以 1080i59.94 或 1080i50 的输出率，输出为“Fill（填充）和 Key（键）- 直切阿尔法 (Straight Alpha)”信号。**
 
 只需将笔记本电脑连接到 Blackmagic **UltraStudio HD Mini** 或类似的 DeckLink 设备，即可在视频切换台上实现完美的半透明图形（字幕或 CG）合成。
@@ -90,7 +93,7 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
-*※ 专业版许可证管理系统目前正在开发中。*
+*※ 您可以从我们的 [销售网站](https://cef-decklink-sale.vercel.app/) 购买专业版许可证。*
 
 ---
 
