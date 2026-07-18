@@ -19,8 +19,12 @@ You shall not, and shall not permit any third party to:
 ## 2. Proprietary Rights
 All title, ownership rights, and intellectual property rights in and to the Software (including but not limited to any source code, binaries, textures, and documentation) shall remain the exclusive property of the Licensor. The Software is protected by copyright laws and international treaty provisions.
 
-## 3. Watermarks & Pro Version
+## 3. Watermarks & Pro Version (License)
 The demo version of the Software outputs a visual watermark. Attempting to bypass, disable, remove, or modify this watermark by any technical means is strictly prohibited. Removal of the watermark is only permitted by configuring a valid, officially purchased license key.
+
+### 3.1 License Restrictions
+- Each license key is valid only for a single PC.
+- If a single license key is detected running on multiple PCs, the Licensor reserves the right to immediately deactivate/ban the license key and terminate use without any prior notice.
 
 ## 4. Limitation of Liability
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DAMAGES, INCLUDING BUT NOT LIMITED TO DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE.

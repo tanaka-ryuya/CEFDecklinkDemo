@@ -40,6 +40,10 @@ The executable `DeckLinkDX11.exe` in the extracted folder is the main applicatio
 1. Connect a Windows PC to **UltraStudio HD Mini** via Thunderbolt.
 2. Connect UltraStudio **SDI OUT 1** to the switcher's **Fill input** and **SDI OUT 2** to the **Key input** using SDI cables.
 
+> [!WARNING]
+> **Tested/Verified Environment Only**  
+> This software has **only been tested in an environment where an UltraStudio HD Mini is connected to a Windows PC via Thunderbolt**. Operation with other DeckLink devices or connection interfaces (such as PCIe card slots) is unverified and not guaranteed.
+
 ### 2. Launch & Settings
 Create a `config.json` file next to `DeckLinkDX11.exe` to specify the target web URL and output format.
 
@@ -93,7 +97,18 @@ To remove the watermark, place a `licensekey.json` next to the executable.
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
+> [!IMPORTANT]
+> **License Policy**
+> - **One license is required per PC.**
+> - If a single license key is detected running on multiple PCs, the license key will be **banned/revoked** immediately without prior notice.
+
+### Pricing Plans (Planned)
+- **Monthly Plan**: $9.9 / month (Auto-renewal)
+- **1-Year Plan**: $118.8 / year (No long-term discount, equivalent to $9.9/month)
+- **5-Year Plan**: $594.0 / 5 years (No long-term discount, equivalent to $9.9/month)
+
 *※ You can purchase a Pro license from our [Sales Site](https://cef-decklink-sale.vercel.app/).*
+
 
 ---
 

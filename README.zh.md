@@ -40,6 +40,10 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
 1. 通过 雷电 (Thunderbolt) 接口将 Windows PC 连接到 **UltraStudio HD Mini**。
 2. 使用 SDI 线缆将 UltraStudio 的 **SDI OUT 1** 连接到切换台的 **Fill 输入**，将 **SDI OUT 2** 连接到 **Key 输入**。
 
+> [!WARNING]
+> **关于动作测试环境**  
+> 本软件**仅在 Windows 电脑与 UltraStudio HD Mini 通过雷电接口连接的环境下进行了动作测试与验证**。在其他 DeckLink 系列设备或通过 PCIe 插槽连接等环境下尚未进行测试和验证，无法保证正常运行，敬请注意。
+
 ### 2. 启动与设置
 在 `DeckLinkDX11.exe` 同级目录下创建 `config.json` 配置文件，以指定目标网页的 URL 和输出格式。
 
@@ -93,7 +97,18 @@ CEFDecklink 是一款**轻量、单一功能且高度稳定的广播级软件。
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
+> [!IMPORTANT]
+> **授权许可政策**
+> - **每台电脑（PC）需要一个独立的许可证。**
+> - 若检测到同一个许可证密钥在多台电脑上运行，该许可证密钥将被立即**禁用/封禁 (BAN)**，恕不另行通知。
+
+### 许可证方案（计划价格）
+- **月度方案**: $9.9 / 月（自动续订）
+- **1年期方案**: $118.8 / 年（无长期折扣，等同于 $9.9/月）
+- **5年期方案**: $594.0 / 5年（无长期折扣，等同于 $9.9/月）
+
 *※ 您可以从我们的 [销售网站](https://cef-decklink-sale.vercel.app/) 购买专业版许可证。*
+
 
 ---
 

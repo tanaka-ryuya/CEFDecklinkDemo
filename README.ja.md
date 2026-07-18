@@ -40,6 +40,10 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 1. 送出用の Windows PC（ノートPCなど）と **UltraStudio HD Mini** を Thunderbolt ケーブルで接続します。
 2. UltraStudio の **SDI OUT 1** をスイッチャーの **Fill 入力**へ、**SDI OUT 2** を **Key 入力**へ SDI ケーブルで接続します。
 
+> [!WARNING]
+> **動作検証環境について**  
+> 本ソフトウェアは、現時点で **Windows PC と UltraStudio HD Mini を Thunderbolt で接続した環境でのみ動作テスト・検証**を行っています。その他の DeckLink シリーズ製品や接続インターフェースでの動作は保証・検証されておりませんのでご注意ください。
+
 ### 2. ソフトウェアの起動と設定
 解凍したフォルダの中に設定ファイル `config.json` を作成し、描画したい Web ページの URL と出力フォーマットを指定します。
 
@@ -93,7 +97,18 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
   "license_key": "YYYYMMDD-xxxxxxxxxxxxxxxx"
 }
 ```
+> [!IMPORTANT]
+> **ライセンスの利用規約について**
+> - **PC1台につき1ライセンスが必要です。**
+> - 複数台のPCで同一ライセンスキーの稼働が確認された場合は、事前予告なくライセンスが**無効化（BAN）**されますのでご注意ください。
+
+### ライセンスプラン（予定価格）
+- **月間プラン**: $9.9 / 月（自動更新）
+- **1年間プラン**: $118.8 / 年（長期割引なし・$9.9/月相当）
+- **5年間プラン**: $594.0 / 5年（長期割引なし・$9.9/月相当）
+
 *※ プロ版ライセンスは [セールスサイト](https://cef-decklink-sale.vercel.app/) からご購入いただけます。*
+
 
 ---
 
