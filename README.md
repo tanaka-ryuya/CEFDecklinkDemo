@@ -78,6 +78,9 @@ Run `DeckLinkDX11.exe` to start playout.
 ---
 
 ## ⌨️ Controls (Console TUI Shortcuts)
+
+![Console TUI](docs/terminal.webp)
+
 While the console window has focus, you can use the following keys:
 
 - **`Ctrl + I`**: **Interlace Mode (Default)** (Merges frames for 1080i output)
