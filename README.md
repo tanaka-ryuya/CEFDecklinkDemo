@@ -1,9 +1,13 @@
 # CEFDecklink - Broadcast-Grade Graphic Playout Software (Demo Release)
 
-Language: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
+Language: [English](README.md) | [日本語](README.ja.md)
 
 > [!IMPORTANT]
-> This is a Demo release. To purchase the full Pro version and remove the watermark, please visit our [Sales Site](https://cef-decklink-sale.vercel.app/).
+> **🎉 CEFDecklink is now Open Source!**  
+> CEFDecklink has been fully open-sourced under the **MIT License**. This repository is kept as an archive.  
+> 
+> Please visit the main repository for full source code, documentation, and the latest releases:  
+> 👉 **[https://github.com/tanaka-ryuya/CEFDecklink](https://github.com/tanaka-ryuya/CEFDecklink)**
 
 CEFDecklink is a **lightweight, single-purpose, and highly stable broadcast-grade software that renders web pages using an embedded Chromium Embedded Framework (CEF) and outputs them as "Fill and Key (Straight Alpha)" signals via SDI at 1080i59.94 or 1080i50.**
 
@@ -12,10 +16,8 @@ Simply connect a laptop to a Blackmagic **UltraStudio HD Mini** or similar DeckL
 ---
 
 ## 📥 Download
-Download and extract [CEFDecklink.zip](https://github.com/tanaka-ryuya/CEFDecklinkDemo/releases/download/v0.1.0-demo/CEFDecklink.zip) from GitHub Releases.
-The executable `DeckLinkDX11.exe` in the extracted folder is the main application (no installation required).
-
-*※ Hosted as a GitHub Release asset.*
+Please download the latest releases and source code from the main open-source repository:  
+👉 **[tanaka-ryuya/CEFDecklink Releases](https://github.com/tanaka-ryuya/CEFDecklink/releases)**
 
 > [!TIP]
 > **Try it instantly without hardware!**  

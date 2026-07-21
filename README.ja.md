@@ -1,9 +1,13 @@
 # CEFDecklink - 放送品質グラフィック送出ソフトウェア (Demo Release)
 
-Language: [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh.md)
+Language: [English](README.md) | [日本語](README.ja.md)
 
 > [!IMPORTANT]
-> 本ソフトウェアはデモ版です。ウォーターマーク（透かし）のないプロ版の購入は、[セールスサイト](https://cef-decklink-sale.vercel.app/) をご覧ください。
+> **🎉 CEFDecklink はオープンソース化（MITライセンス）されました！**  
+> CEFDecklink は **MITライセンス** のもと、完全オープンソース化されました。このDemoリポジトリはアーカイブとして保持されています。  
+> 
+> 全ソースコード、ドキュメント、および最新リリースについては、本家リポジトリをご覧ください：  
+> 👉 **[https://github.com/tanaka-ryuya/CEFDecklink](https://github.com/tanaka-ryuya/CEFDecklink)**
 
 CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; CEF）で描画した Web ページを、1080i59.94 または 1080i50 の出力レートで、SDI から「ストレートアルファの Fill と Key」に分離出力できる、軽量・単機能かつ安定性に優れた放送品質のソフトウェア**です。
 
@@ -12,10 +16,8 @@ CEFDecklink は、**組み込みのブラウザ（Chromium Embedded Framework; C
 ---
 
 ## 📥 ダウンロード
-[GitHub Releases](https://github.com/tanaka-ryuya/CEFDecklinkDemo/releases/download/v0.1.0-demo/CEFDecklink.zip) から最新の **`CEFDecklink.zip`** をダウンロードして解凍してください。
-解凍したフォルダ内にある `DeckLinkDX11.exe` が本体の実行ファイルです（インストーラーやインストール作業は不要です）。
-
-*※ GitHub Releases のアセットとして配置しています。*
+最新のビルドおよびソースコードは、オープンソース化された本家リポジトリからダウンロードしてください：  
+👉 **[tanaka-ryuya/CEFDecklink Releases](https://github.com/tanaka-ryuya/CEFDecklink/releases)**
 
 > [!TIP]
 > **機材なしで今すぐ簡単にお試しいただけます！**  
